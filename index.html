@@ -190,7 +190,7 @@ html[lang=ml] .yr,html[lang=ml] .wt{letter-spacing:.02em;line-height:1.25}
 .areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.areas span{border:1px solid var(--line);padding:4px 13px;font-size:.84rem}
 details.f{border-bottom:1px solid var(--line);padding:16px 0}details.f summary{font-weight:600;cursor:pointer}details.f p{color:var(--mut);margin-top:8px}
 footer{background:var(--g2);color:#b9cbbf;padding:56px 0 28px;font-size:.9rem}
-.fg{display:grid;grid-template-columns:1.5fr 1fr 1.1fr 1fr;gap:34px;margin-bottom:30px}
+.fg{display:grid;grid-template-columns:1.5fr .85fr .85fr .85fr 1.2fr;gap:28px;margin-bottom:30px}
 footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;padding:3px 0}footer a:hover{color:#fff}
 .fadr{display:flex;gap:10px;align-items:flex-start;margin-top:10px}.fadr .ic{color:var(--o);margin-top:3px}
 .fnav{display:inline-flex!important;align-items:center;gap:8px;margin-top:12px;background:var(--o);color:#fff!important;padding:10px 18px!important;font-weight:700;border-radius:2px}.fnav:hover{background:var(--o2)}
@@ -254,14 +254,15 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
  .tabs{display:flex;overflow-x:auto;scrollbar-width:none}.tab{min-width:60%;flex:none}
  section{padding:52px 0}.stm,.rooms,.inst,.join,.two,.war-in{grid-template-columns:1fr;gap:28px}.mat{grid-template-columns:repeat(3,1fr)}.mat span:nth-child(3){border-right:0}.mat span:nth-child(-n+3){border-bottom:1px solid var(--line)}
  .rl{display:flex;overflow-x:auto;gap:18px;scrollbar-width:none}.rl button{width:auto;white-space:nowrap;font-size:1.4rem;border-bottom:0;padding:6px 0}.rl button.on{padding-left:0;border-left:0;border-bottom:3px solid var(--o)}
- .car .pc{flex-basis:70%}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}.look button{flex-basis:78%}.vals,.stats{grid-template-columns:1fr 1fr}.tgrid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
+ .car .pc{flex-basis:70%}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}.look button{flex-basis:78%}.vals,.stats{grid-template-columns:1fr 1fr}.tgrid{grid-template-columns:1fr}
+.fg{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 14px}.fg>div:first-child,.fg .fhrs{grid-column:1/-1}
  .join form{grid-template-columns:1fr}.arr{display:none}.wa{display:none}
  .plr{grid-template-columns:minmax(0,1fr);gap:12px}.th{width:68px}
  .plc{justify-content:space-between;border-top:1px solid var(--line);padding-top:10px}
  .plc strong{margin-right:auto;font-size:1.1rem}
- .pm{padding:0;align-items:stretch}.pmi{max-height:100%;height:100%}
- .pmg{grid-template-columns:1fr;gap:18px;padding:0 0 12px}.gal{position:static}.inf{padding:0 16px}.ths{padding:0 16px}.pmx{position:fixed}
- .rel{padding:6px 16px 20px}.rel .g4{grid-template-columns:repeat(2,1fr)}.pma{padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+ .pm{padding:12px;align-items:center}.pmi{max-height:calc(100dvh - 24px);height:auto;border-radius:6px;overflow-x:hidden}
+ .pmg{grid-template-columns:minmax(0,1fr);gap:18px;padding:0 0 16px}.gal,.inf{min-width:0}.gal{position:static}.inf{padding:0 18px}.ths{padding:0 18px}.pmx{position:fixed;right:22px;top:22px}
+ .rel{padding:6px 18px 20px}.rel .g4{grid-template-columns:repeat(2,minmax(0,1fr))}.pma{padding:12px 18px calc(12px + env(safe-area-inset-bottom))}
  body{padding-bottom:calc(62px + env(safe-area-inset-bottom))}.toast{bottom:78px}
  .bn{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
  .bn a,.bn button{padding:9px 4px 8px;text-align:center;font-size:.72rem;font-weight:600;color:var(--mut);display:flex;flex-direction:column;align-items:center}.bn i{font-style:normal;font-size:1.2rem;line-height:1.2}.bn .on{color:var(--g)}.bn .wi{color:#25d366;width:1.35rem;height:1.35rem}
@@ -270,7 +271,8 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
  .pb h3{font-size:.92rem}.pb .dd{display:none}
  .row{gap:6px}.row .btn{padding:8px 6px;font-size:.76rem;white-space:normal;line-height:1.2;min-width:0}
  .row .wab{flex:0 0 36px;padding:8px 0}
- .vals{grid-template-columns:1fr}.bt{width:100%}.bt input{flex:1 1 100%}.bt select{flex:1}.fg{grid-template-columns:1fr}
+ .stats{padding:20px 16px;gap:14px}.stats div{padding-left:12px}
+ .vals{grid-template-columns:1fr}.bt{width:100%}.bt input{flex:1 1 100%}.bt select{flex:1}
  .chips{grid-template-columns:repeat(2,1fr)}.chips a{min-height:112px;padding:18px 8px}
  .pma .btn{flex:1;padding:12px 10px}.pmp{flex:1 1 100%}.num{font-size:7.5rem}.big{flex-wrap:wrap}
 }
@@ -473,10 +475,10 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
    <a class="fnav" id="fnav" target="_blank" rel="noopener" href="#"><svg class="ic"><use href="#i-nav"/></svg><span data-i18n="f_dir">Get directions on Google Maps</span></a>
    <iframe class="fmap" id="fmap" title="Majlis Sofa location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-  <div><h3 data-i18n="f_shop">Shop</h3><a href="#shop" data-go="shop" data-i18n="f_all">All products</a><a href="#price" data-go="home" data-sc="price" data-i18n="price_list">Price list</a><a href="#warranty" data-go="home" data-sc="warranty" data-i18n="f_war">10 years warranty</a><a href="#inst" data-go="home" data-sc="inst" data-i18n="institutions">Institutions</a>
-   <h3 style="margin-top:18px" data-i18n="f_help">Help</h3><a id="fwa" target="_blank" rel="noopener" href="#" data-i18n="f_order">Order on WhatsApp</a><a href="#faq" data-go="home" data-sc="faq">FAQ</a></div>
-  <div><h3 data-i18n="f_hours">Working hours</h3><div class="ost" id="ost"><i></i><span></span></div><ul class="hrs" id="hrs"></ul></div>
-  <div><h3 data-i18n="f_follow">Follow</h3><a target="_blank" rel="noopener" href="https://www.instagram.com/majlissofa">Instagram</a><a target="_blank" rel="noopener" href="https://www.facebook.com/majlissofa">Facebook</a><a target="_blank" rel="noopener" href="https://www.youtube.com/@majlissofa">YouTube</a></div>
+  <div class="fcol"><h3 data-i18n="f_shop">Shop</h3><a href="#shop" data-go="shop" data-i18n="f_all">All products</a><a href="#price" data-go="home" data-sc="price" data-i18n="price_list">Price list</a><a href="#warranty" data-go="home" data-sc="warranty" data-i18n="f_war">10 years warranty</a><a href="#inst" data-go="home" data-sc="inst" data-i18n="institutions">Institutions</a></div>
+  <div class="fcol"><h3 data-i18n="f_help">Help</h3><a id="fwa" target="_blank" rel="noopener" href="#" data-i18n="f_order">Order on WhatsApp</a><a href="#faq" data-go="home" data-sc="faq">FAQ</a></div>
+  <div class="fcol"><h3 data-i18n="f_follow">Follow</h3><a target="_blank" rel="noopener" href="https://www.instagram.com/majlissofa">Instagram</a><a target="_blank" rel="noopener" href="https://www.facebook.com/majlissofa">Facebook</a><a target="_blank" rel="noopener" href="https://www.youtube.com/@majlissofa">YouTube</a></div>
+  <div class="fhrs"><h3 data-i18n="f_hours">Working hours</h3><div class="ost" id="ost"><i></i><span></span></div><ul class="hrs" id="hrs"></ul></div>
  </div>
  <p data-i18n="f_copy">© 2026 Majlis Sofa, Areekode, Malappuram, Kerala. Prices are ranges; final price changes upon materials and measurement.</p>
 </div></footer>
