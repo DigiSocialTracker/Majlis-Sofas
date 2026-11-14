@@ -114,7 +114,7 @@ section{padding:84px 0}
 .car .pc{flex:0 0 calc((100% - 60px)/4);scroll-snap-align:start}
 .arr{display:flex;gap:8px}.arr button{width:42px;height:42px;border:1.5px solid var(--ink);font-size:1.2rem}.arr button:hover{background:var(--ink);color:#fff}
 .soft{background:var(--bg)}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px 20px;align-items:start}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:34px 20px;align-items:stretch}
 /* PRODUCT CARD: every image area is a fixed 5:4 box */
 .pc{display:flex;flex-direction:column;cursor:pointer;min-width:0;height:100%}
 .pc .im{position:relative;aspect-ratio:5/4;width:100%;background:var(--bg);overflow:hidden;flex:none}
@@ -254,9 +254,11 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
  .tabs{display:flex;overflow-x:auto;scrollbar-width:none}.tab{min-width:60%;flex:none}
  section{padding:52px 0}.stm,.rooms,.inst,.join,.two,.war-in{grid-template-columns:1fr;gap:28px}.mat{grid-template-columns:repeat(3,1fr)}.mat span:nth-child(3){border-right:0}.mat span:nth-child(-n+3){border-bottom:1px solid var(--line)}
  .rl{display:flex;overflow-x:auto;gap:18px;scrollbar-width:none}.rl button{width:auto;white-space:nowrap;font-size:1.4rem;border-bottom:0;padding:6px 0}.rl button.on{padding-left:0;border-left:0;border-bottom:3px solid var(--o)}
- .car .pc{flex-basis:70%}.grid{grid-template-columns:repeat(2,1fr);gap:24px 12px}.look button{flex-basis:78%}.vals,.stats{grid-template-columns:1fr 1fr}.tgrid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
+ .car .pc{flex-basis:70%}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}.look button{flex-basis:78%}.vals,.stats{grid-template-columns:1fr 1fr}.tgrid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
  .join form{grid-template-columns:1fr}.arr{display:none}.wa{display:none}
- .plr{grid-template-columns:1fr auto;gap:12px 14px}.plr .plb{grid-column:1/-1;order:3}.th{width:72px}
+ .plr{grid-template-columns:minmax(0,1fr);gap:12px}.th{width:68px}
+ .plc{justify-content:space-between;border-top:1px solid var(--line);padding-top:10px}
+ .plc strong{margin-right:auto;font-size:1.1rem}
  .pm{padding:0;align-items:stretch}.pmi{max-height:100%;height:100%}
  .pmg{grid-template-columns:1fr;gap:18px;padding:0 0 12px}.gal{position:static}.inf{padding:0 16px}.ths{padding:0 16px}.pmx{position:fixed}
  .rel{padding:6px 16px 20px}.rel .g4{grid-template-columns:repeat(2,1fr)}.pma{padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
@@ -264,7 +266,14 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
  .bn{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
  .bn a,.bn button{padding:9px 4px 8px;text-align:center;font-size:.72rem;font-weight:600;color:var(--mut);display:flex;flex-direction:column;align-items:center}.bn i{font-style:normal;font-size:1.2rem;line-height:1.2}.bn .on{color:var(--g)}.bn .wi{color:#25d366;width:1.35rem;height:1.35rem}
 }
-@media(max-width:560px){.pb h3{font-size:.92rem}.row .btn{padding:9px 8px;font-size:.8rem}.pb .dd{display:none}.vals{grid-template-columns:1fr}.bt{width:100%}.bt input{flex:1 1 100%}.bt select{flex:1}.fg{grid-template-columns:1fr}.chips{grid-template-columns:repeat(2,1fr)}.chips a{min-height:112px;padding:18px 8px}.plc strong{font-size:1.05rem}.pma .btn{flex:1;padding:12px 10px}.pmp{flex:1 1 100%}.num{font-size:7.5rem}.big{flex-wrap:wrap}.row .btn:first-child{font-size:.78rem}}
+@media(max-width:560px){
+ .pb h3{font-size:.92rem}.pb .dd{display:none}
+ .row{gap:6px}.row .btn{padding:8px 6px;font-size:.76rem;white-space:normal;line-height:1.2;min-width:0}
+ .row .wab{flex:0 0 36px;padding:8px 0}
+ .vals{grid-template-columns:1fr}.bt{width:100%}.bt input{flex:1 1 100%}.bt select{flex:1}.fg{grid-template-columns:1fr}
+ .chips{grid-template-columns:repeat(2,1fr)}.chips a{min-height:112px;padding:18px 8px}
+ .pma .btn{flex:1;padding:12px 10px}.pmp{flex:1 1 100%}.num{font-size:7.5rem}.big{flex-wrap:wrap}
+}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.tab.on i{animation:none;width:100%}}
 </style>
 </head>
