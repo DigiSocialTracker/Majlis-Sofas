@@ -24,12 +24,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Malayalam:wght@500;700&family=Anek+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":["FurnitureStore","LocalBusiness"],"@id":"https://www.majlis-sofa.com/#biz","name":"Majlis Sofa","url":"https://www.majlis-sofa.com/","telephone":"+919947230699","image":"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80","priceRange":"₹500 - ₹55000","description":"Custom sofa, bed cot, hydraulic bed and sofa repair makers in Areekode, Malappuram, Kerala.","address":{"@type":"PostalAddress","addressLocality":"Areekode","addressRegion":"Kerala","postalCode":"673639","addressCountry":"IN"},"openingHours":"Mo-Su 09:00-20:00","areaServed":["Malappuram","Kozhikode","Ernakulam","Thrissur","Kerala","Karnataka","Tamil Nadu"],"sameAs":["https://www.instagram.com/majlissofa","https://www.facebook.com/majlissofa","https://www.youtube.com/@majlissofa"]},
+{"@type":["FurnitureStore","LocalBusiness"],"@id":"https://www.majlis-sofa.com/#biz","name":"Majlis Sofa","url":"https://www.majlis-sofa.com/","telephone":"+919947230699","image":"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80","priceRange":"₹500 - ₹55000","description":"Custom sofa, bed cot, hydraulic bed and sofa repair makers in Areekode, Malappuram, Kerala. Trusted by 1,521+ happy customers.","address":{"@type":"PostalAddress","streetAddress":"Areekode - Manjeri Road, Areekode","addressLocality":"Areekode, Malappuram","addressRegion":"Kerala","postalCode":"673639","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":11.2415,"longitude":76.0505},"hasMap":"https://www.google.com/maps/search/?api=1&query=Majlis+Sofa+Areekode+Malappuram","openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"20:00"},"areaServed":["Areekode","Malappuram","Manjeri","Nilambur","Kondotty","Perinthalmanna","Kozhikode","Thrissur","Ernakulam","Kerala","Karnataka","Tamil Nadu"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"1521","bestRating":"5"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Shameer P."},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Ordered a custom L-shape grey suede corner sofa for our new house in Manjeri. Duroflex foam comfort and finishing are showroom quality at workshop price."},{"@type":"Review","author":{"@type":"Person","name":"Abdul Latheef K."},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Bought a King size hydraulic bed cot and 3 seater sofa. Delivered and fitted on time in Kozhikode. Very sturdy treated wood frame."},{"@type":"Review","author":{"@type":"Person","name":"Fathima R."},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Gave our 8-year-old sofa for repair and fabric change at Areekode workshop. Looks brand new now and saved us a lot of money."}],"sameAs":["https://www.instagram.com/majlissofa","https://www.facebook.com/majlissofa","https://www.youtube.com/@majlissofa"]},
 {"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What is the price of a 3 seater sofa in Malappuram?","acceptedAnswer":{"@type":"Answer","text":"Starting ₹9,500. Final price depends on material and measurement."}},
+{"@type":"Question","name":"What is the price of a 3 seater sofa in Malappuram?","acceptedAnswer":{"@type":"Answer","text":"Starting ₹9,500 (range ₹9,500 – ₹16,000). Final price depends on fabric, size and measurement."}},
 {"@type":"Question","name":"Do you deliver to Karnataka and Tamil Nadu?","acceptedAnswer":{"@type":"Answer","text":"Yes, we deliver and install across Kerala, Karnataka and Tamil Nadu."}},
 {"@type":"Question","name":"What warranty do you give?","acceptedAnswer":{"@type":"Answer","text":"10 years warranty on wood, foam and structure."}},
-{"@type":"Question","name":"How do I order a custom sofa?","acceptedAnswer":{"@type":"Answer","text":"Add items to your cart and send the quotation on WhatsApp, or send your size and a reference photo to 99472 30699. We make it in 7–12 days."}}]}]}
+{"@type":"Question","name":"How do I order a custom sofa?","acceptedAnswer":{"@type":"Answer","text":"Add items to your cart and send the quotation on WhatsApp, or send your size and a reference photo to 99472 30699. We make it in 7–12 days."}},
+{"@type":"Question","name":"Do you repair old sofas?","acceptedAnswer":{"@type":"Answer","text":"Yes. Sofa repair starts at ₹3,000 including foam, fabric and frame work."}}]}]}
 </script>
 <style>
 :root{--g:#0f4a2a;--g2:#0a3320;--o:#f07410;--o2:#d4620a;--bg:#f3f4f0;--ink:#111a14;--mut:#616b64;--line:#e1e5df;--serif:'Marcellus','Noto Serif Malayalam',serif;--sans:'Manrope','Anek Malayalam',system-ui,sans-serif}
@@ -146,8 +147,18 @@ section{padding:84px 0}
 .look button{position:relative;flex:0 0 calc((100% - 40px)/3);scroll-snap-align:start;text-align:left;color:#fff;aspect-ratio:5/4;overflow:hidden}
 .look img{width:100%;height:100%;object-fit:cover}
 .look span{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(6,28,16,.8));font:400 1.25rem var(--serif)}
-.vals{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
-.vals div{border-top:2px solid var(--g);padding-top:16px}.vals h3{font-size:1.3rem;margin-bottom:6px}.vals p{color:var(--mut);font-size:.92rem}
+/* STATS BAR & TESTIMONIALS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;background:var(--g2);color:#fff;padding:28px 32px;margin-top:44px;border-radius:2px}
+.stats div{border-left:3px solid var(--o);padding-left:16px}
+.stats b{display:block;font:400 clamp(1.8rem,3vw,2.5rem)/1.1 var(--serif);color:#fff}
+.stats span{font-size:.86rem;color:#cfe0d5;display:block;margin-top:4px}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{background:#fff;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:12px}
+.tstars{color:var(--o);font-size:1.05rem;letter-spacing:2px}
+.tcard p{color:var(--ink);font-size:.94rem;flex:1}
+.tmeta{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:12px;font-size:.84rem}
+.tmeta b{color:var(--g);display:block}.tmeta span{color:var(--mut)}
+.tbadge{background:#eef5f0;color:var(--g);font-size:.75rem;font-weight:700;padding:3px 9px;border-radius:99px}
 /* WARRANTY BANNER */
 .war{background:radial-gradient(900px 520px at 88% 0%,rgba(240,116,16,.25),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(15,74,42,.7),transparent 60%),#08150e;color:#fff;position:relative;overflow:hidden}
 .war:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 26px);pointer-events:none}
@@ -243,7 +254,7 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
  .tabs{display:flex;overflow-x:auto;scrollbar-width:none}.tab{min-width:60%;flex:none}
  section{padding:52px 0}.stm,.rooms,.inst,.join,.two,.war-in{grid-template-columns:1fr;gap:28px}.mat{grid-template-columns:repeat(3,1fr)}.mat span:nth-child(3){border-right:0}.mat span:nth-child(-n+3){border-bottom:1px solid var(--line)}
  .rl{display:flex;overflow-x:auto;gap:18px;scrollbar-width:none}.rl button{width:auto;white-space:nowrap;font-size:1.4rem;border-bottom:0;padding:6px 0}.rl button.on{padding-left:0;border-left:0;border-bottom:3px solid var(--o)}
- .car .pc{flex-basis:70%}.grid{grid-template-columns:repeat(2,1fr);gap:24px 12px}.look button{flex-basis:78%}.vals{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
+ .car .pc{flex-basis:70%}.grid{grid-template-columns:repeat(2,1fr);gap:24px 12px}.look button{flex-basis:78%}.vals,.stats{grid-template-columns:1fr 1fr}.tgrid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}
  .join form{grid-template-columns:1fr}.arr{display:none}.wa{display:none}
  .plr{grid-template-columns:1fr auto;gap:12px 14px}.plr .plb{grid-column:1/-1;order:3}.th{width:72px}
  .pm{padding:0;align-items:stretch}.pmi{max-height:100%;height:100%}
@@ -312,6 +323,16 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
   <div><p data-i18n="stm_p">Majlis Sofa builds corner sofas, recliners, bed cots and hydraulic storage beds directly from our Malappuram workshop. Every piece is made to your measurement, in your choice of fabric and colour.</p><a class="ul" href="#shop" data-go="shop" data-i18n="browse">Browse the shop</a></div>
  </div>
  <div class="mat"><span data-i18n="m1">Duroflex foam</span><span data-i18n="m2">LG Gold plywood</span><span data-i18n="m3">Treated wood</span><span data-i18n="m4">Zigzag spring</span><span data-i18n="m5">Suede</span><span data-i18n="m6">Jute and leather</span></div>
+</div></section>
+
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="stats" aria-label="Workshop achievements">
+  <div><b id="custCount" data-target="1521">1,521+</b><span data-i18n="st_cust">Happy customers across South India</span></div>
+  <div><b>10 <span style="font-size:1.2rem" data-i18n="w_years">YEARS</span></b><span data-i18n="st_war">Wood, foam &amp; structure warranty</span></div>
+  <div><b>7–12 <span style="font-size:1.2rem" data-i18n="st_days">Days</span></b><span data-i18n="st_del">Custom workshop delivery</span></div>
+  <div><b>4.9 ★</b><span data-i18n="st_rat">Verified customer satisfaction</span></div>
+ </div>
 </div></section>
 
 <section class="soft"><div class="wrap">
@@ -385,6 +406,14 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
  </div>
 </div></section>
 
+<section id="reviews"><div class="wrap">
+ <div class="sh">
+  <div><h2 data-i18n="rev_h">Trusted by 1,521+ happy families</h2><p data-i18n="rev_p">Real feedback from homes, mosques and offices across Kerala, Karnataka &amp; Tamil Nadu.</p></div>
+  <a class="ul" target="_blank" rel="noopener" href="https://wa.me/919947230699?text=Hi%2C%20I%20saw%20customer%20reviews%20on%20majlis-sofa.com%20and%20want%20a%20quote" data-i18n="w_cta">Get a free quote</a>
+ </div>
+ <div class="tgrid" id="tgrid"></div>
+</div></section>
+
 <section class="soft"><div class="wrap join">
  <div><h2 data-i18n="join_h">Get new designs on WhatsApp</h2><p style="color:var(--mut);margin-top:8px" data-i18n="join_p">Tell us your name and town. We will send new designs and offers.</p></div>
  <form id="jf"><input id="jn" data-i18n-ph="your_name" placeholder="Your name" aria-label="Your name"><input id="jl" data-i18n-ph="your_town" placeholder="Your town" aria-label="Your town"><button class="btn bg" type="submit" data-i18n="send">Send</button></form>
@@ -392,14 +421,15 @@ footer h3{color:#fff;font-size:1.2rem;margin-bottom:10px}footer a{display:block;
 
 <section class="seo"><div class="wrap two">
  <div>
-  <h2>Sofa manufacturers in Malappuram, Kerala</h2>
-  <p>Majlis Sofa is a custom sofa maker in Areekode, Malappuram. We build L-shape and U-shape corner sofas, recliners, loungers, Majlis seating, bed cots, hydraulic storage beds, headboards, mattresses and teapoys, and we repair old sofas.</p>
-  <p>Looking for a sofa shop near Manjeri, Perinthalmanna, Nilambur, Kondotty, Kozhikode or Ernakulam? Visit our workshop or order online and we deliver to your door.</p>
-  <div class="areas"><span>Areekode</span><span>Malappuram</span><span>Manjeri</span><span>Nilambur</span><span>Kondotty</span><span>Perinthalmanna</span><span>Kozhikode</span><span>Thrissur</span><span>Ernakulam</span><span>Kottayam</span><span>Karnataka</span><span>Tamil Nadu</span></div>
+  <h2>Custom Sofa Manufacturers in Areekode, Malappuram</h2>
+  <p>With <strong>1,521+ completed orders</strong>, Majlis Sofa is a trusted direct-from-workshop sofa and furniture manufacturer in Areekode, Malappuram. We custom-build L-shape and U-shape corner sofas, 3-seater sofas, recliners, loungers, traditional Arabic Majlis seating, treated-wood bed cots, hydraulic storage beds, cushioned headboards, Duroflex mattresses, and teapoys.</p>
+  <p>We also undertake complete <strong>old sofa repair and re-upholstery</strong> (foam replacement, spring repair, and fabric change) at our Areekode workshop, plus bulk seating orders for mosques, churches, hospitals, and auditoriums. Doorstep delivery and fitting available across Malappuram, Manjeri, Perinthalmanna, Nilambur, Kondotty, Kozhikode, Thrissur, Ernakulam, Karnataka, and Tamil Nadu.</p>
+  <div class="areas"><span>Areekode</span><span>Malappuram</span><span>Manjeri</span><span>Nilambur</span><span>Kondotty</span><span>Perinthalmanna</span><span>Edavanna</span><span>Kozhikode</span><span>Thrissur</span><span>Ernakulam</span><span>Kottayam</span><span>Karnataka</span><span>Tamil Nadu</span></div>
  </div>
  <div>
-  <h2>മലപ്പുറത്ത് മികച്ച കസ്റ്റം സോഫ</h2>
-  <p lang="ml" style="font-family:'Anek Malayalam',sans-serif">വീടിന്റെ വലുപ്പത്തിനും ഇന്റീരിയറിനും അനുയോജ്യമായി ഡിസൈൻ ചെയ്യുന്ന കസ്റ്റം സോഫകളാണ് മജ്ലിസ് സോഫ നിർമ്മിക്കുന്നത്. L-ഷേപ്പ്, റിക്ലൈനർ, മജ്ലിസ് സീറ്റിംഗ്, ബെഡ്കോട്ട്, ടീപ്പോയ് എന്നിവ ഡ്യൂറോഫ്ലെക്സ് ഫോം, ഇറക്കുമതി ചെയ്ത ട്രീറ്റഡ് വുഡ് എന്നിവ ഉപയോഗിച്ച് 10 വർഷ വാറന്റിയോടെ ലഭിക്കും. വില അറിയാൻ WhatsApp വഴി ബന്ധപ്പെടൂ.</p>
+  <h2>മലപ്പുറത്ത് മികച്ച കസ്റ്റം സോഫ നിർമ്മാതാക്കൾ</h2>
+  <p lang="ml" style="font-family:'Anek Malayalam',sans-serif"><strong>1,521-ലധികം സന്തുഷ്ടരായ ഉപഭോക്താക്കളുടെ</strong> വിശ്വാസത്തോടെ അരീക്കോട്, മലപ്പുറം കേന്ദ്രമായി പ്രവർത്തിക്കുന്ന കസ്റ്റം സോഫ നിർമ്മാതാക്കളാണ് മജ്ലിസ് സോഫ. വീടിന്റെ അളവിനും ഇന്റീരിയറിനും അനുയോജ്യമായി L-ഷേപ്പ് കോർണർ സോഫ, 3 സീറ്റർ സോഫ, റിക്ലൈനർ, മജ്ലിസ് സീറ്റിംഗ്, ഹൈഡ്രോളിക് ബെഡ് കോട്ട്, മെത്ത, ടീപ്പോയ് എന്നിവ ഡ്യൂറോഫ്ലെക്സ് ഫോം, LG ഗോൾഡ് പ്ലൈവുഡ്, ട്രീറ്റഡ് വുഡ് എന്നിവ ഉപയോഗിച്ച് 10 വർഷ വാറന്റിയോടെ നിർമ്മിച്ചു നൽകുന്നു.</p>
+  <p lang="ml" style="font-family:'Anek Malayalam',sans-serif">പഴയ സോഫകളുടെ ഫോമും തുണിയും മാറ്റുന്ന റിപ്പയർ വർക്കുകളും പള്ളികൾ, ചർച്ചുകൾ, സ്കൂളുകൾ, ആശുപത്രികൾ എന്നിവയ്ക്കുള്ള ബൾക്ക് ഓർഡറുകളും ഏറ്റെടുക്കുന്നു. കേരളം, കർണാടക, തമിഴ്നാട് എന്നിവിടങ്ങളിൽ ഡോർ ഡെലിവറിയും ഫിറ്റിംഗും ലഭ്യമാണ്.</p>
  </div>
 </div></section>
 
@@ -491,6 +521,8 @@ m1:'Duroflex foam',m2:'LG Gold plywood',m3:'Treated wood',m4:'Zigzag spring',m5:
 room_h:'Shop by room',room_p:'Start with the space you are furnishing.',explore:'Explore the selection',best_h:'Best sellers',best_p:'The pieces families in Malappuram order most.',
 price_h:'Price list',price_p:'Price ranges for standard sizes. Final price depends on fabric, size and measurement.',open_shop:'Open the shop',all:'All',work_h:'Our work',work_p:'A look at what we build in the workshop.',
 why_h:'Why choose Majlis Sofa',v1h:'Direct from workshop',v1p:'No middlemen. You deal with the people who build your sofa.',v2h:'Branded materials only',v2p:'Duroflex foam, LG Gold plywood and imported treated wood.',v3h:'10 years warranty',v3p:'Covers wood, foam and structure. Made in 7–12 days.',v4h:'Delivery and fitting',v4p:'Kerala, Karnataka and Tamil Nadu, with installation.',
+st_cust:'Happy customers across South India',st_war:'Wood, foam & structure warranty',st_days:'Days',st_del:'Custom workshop delivery',st_rat:'Verified customer satisfaction',
+rev_h:'Trusted by 1,521+ happy families',rev_p:'Real feedback from homes, mosques and offices across Kerala, Karnataka & Tamil Nadu.',
 w_kicker:'Our promise',w_years:'YEARS',w_title:'WARRANTY',w_sub:'Every Majlis sofa and bed is built to last a decade. Wood, foam and structure are covered, so you buy once and sit easy.',w_cta:'Get a free quote',w_f1:'Made in 7–12 days',w_f2:'Delivery with fitting',w_f3:'Direct from workshop',w_seal:'10-year Majlis warranty',w_seal2:'Ask us about warranty terms on WhatsApp',w1h:'Wood frame',w1p:'Treated wood and LG Gold plywood.',w2h:'Duroflex foam',w2p:'Branded foam for lasting comfort.',w3h:'Strong structure',w3p:'Zigzag spring support built to your size.',
 inst_h:'Furniture for institutions',i1:'Bulk orders',i1p:'Production capacity for mosques, churches, schools and hospitals.',i2:'Custom designs',i2p:'Made to your seating capacity and space.',i3:'Timely delivery and fitting',i3p:'Across Kerala, Karnataka and Tamil Nadu.',req_quote:'Request a quotation',c_mosque:'Mosque',c_church:'Church',c_hosp:'Hospital',c_school:'School and college',c_aud:'Auditorium',
 join_h:'Get new designs on WhatsApp',join_p:'Tell us your name and town. We will send new designs and offers.',your_name:'Your name',your_town:'Your town',send:'Send',
@@ -511,6 +543,8 @@ m1:'ഡ്യൂറോഫ്ലെക്സ് ഫോം',m2:'LG ഗോൾഡ്
 room_h:'മുറി അനുസരിച്ച് ഷോപ്പ് ചെയ്യൂ',room_p:'നിങ്ങൾ ഒരുക്കുന്ന സ്ഥലത്തിൽ നിന്ന് തുടങ്ങൂ.',explore:'ശേഖരം കാണുക',best_h:'ബെസ്റ്റ് സെല്ലേഴ്സ്',best_p:'മലപ്പുറത്തെ കുടുംബങ്ങൾ ഏറ്റവും കൂടുതൽ ഓർഡർ ചെയ്യുന്നവ.',
 price_h:'വില വിവരം',price_p:'സാധാരണ വലുപ്പത്തിനുള്ള വില പരിധി. അന്തിമ വില തുണി, വലുപ്പം, അളവ് എന്നിവ അനുസരിച്ച് മാറും.',open_shop:'ഷോപ്പ് തുറക്കുക',all:'എല്ലാം',work_h:'ഞങ്ങളുടെ വർക്ക്',work_p:'വർക്ക്ഷോപ്പിൽ ഞങ്ങൾ നിർമ്മിക്കുന്നവ.',
 why_h:'എന്തുകൊണ്ട് മജ്ലിസ് സോഫ',v1h:'വർക്ക്ഷോപ്പിൽ നിന്ന് നേരിട്ട്',v1p:'ഇടനിലക്കാരില്ല. സോഫ നിർമ്മിക്കുന്നവരുമായി നേരിട്ട് സംസാരിക്കാം.',v2h:'ബ്രാൻഡഡ് മെറ്റീരിയലുകൾ മാത്രം',v2p:'ഡ്യൂറോഫ്ലെക്സ് ഫോം, LG ഗോൾഡ് പ്ലൈവുഡ്, ഇറക്കുമതി ചെയ്ത ട്രീറ്റഡ് വുഡ്.',v3h:'10 വർഷ വാറന്റി',v3p:'വുഡ്, ഫോം, സ്ട്രക്ചർ എന്നിവയ്ക്ക്. 7–12 ദിവസത്തിൽ നിർമ്മിക്കും.',v4h:'ഡെലിവറിയും ഫിറ്റിംഗും',v4p:'കേരളം, കർണാടക, തമിഴ്നാട് – ഇൻസ്റ്റാളേഷൻ സഹിതം.',
+st_cust:'സന്തുഷ്ടരായ ഉപഭോക്താക്കൾ',st_war:'വുഡ്, ഫോം & സ്ട്രക്ചർ വാറന്റി',st_days:'ദിവസം',st_del:'കസ്റ്റം വർക്ക്ഷോപ്പ് ഡെലിവറി',st_rat:'ഉപഭോക്തൃ സംതൃപ്തി',
+rev_h:'1,521+ കുടുംബങ്ങളുടെ വിശ്വാസം',rev_p:'കേരളം, കർണാടക, തമിഴ്നാട് എന്നിവിടങ്ങളിലെ ഉപഭോക്താക്കളുടെ അഭിപ്രായങ്ങൾ.',
 w_kicker:'ഞങ്ങളുടെ ഉറപ്പ്',w_years:'വർഷം',w_title:'വാറന്റി',w_sub:'ഓരോ മജ്ലിസ് സോഫയും കട്ടിലും ഒരു പതിറ്റാണ്ട് നിലനിൽക്കാൻ നിർമ്മിച്ചതാണ്. വുഡ്, ഫോം, സ്ട്രക്ചർ എന്നിവയ്ക്ക് വാറന്റിയുണ്ട്, ഒരിക്കൽ വാങ്ങിയാൽ സമാധാനമായി ഇരിക്കാം.',w_cta:'സൗജന്യ വില അറിയൂ',w_f1:'7–12 ദിവസത്തിൽ നിർമ്മാണം',w_f2:'ഫിറ്റിംഗ് സഹിതം ഡെലിവറി',w_f3:'വർക്ക്ഷോപ്പിൽ നിന്ന് നേരിട്ട്',w_seal:'10 വർഷ മജ്ലിസ് വാറന്റി',w_seal2:'വാറന്റി നിബന്ധനകൾ വാട്സ്ആപ്പിൽ ചോദിക്കാം',w1h:'വുഡ് ഫ്രെയിം',w1p:'ട്രീറ്റഡ് വുഡും LG ഗോൾഡ് പ്ലൈവുഡും.',w2h:'ഡ്യൂറോഫ്ലെക്സ് ഫോം',w2p:'ദീർഘകാല സുഖത്തിന് ബ്രാൻഡഡ് ഫോം.',w3h:'ഉറപ്പുള്ള സ്ട്രക്ചർ',w3p:'നിങ്ങളുടെ വലുപ്പത്തിൽ സിഗ്സാഗ് സ്പ്രിംഗ് സപ്പോർട്ട്.',
 inst_h:'സ്ഥാപനങ്ങൾക്കുള്ള ഫർണിച്ചർ',i1:'ബൾക്ക് ഓർഡറുകൾ',i1p:'പള്ളികൾ, ചർച്ചുകൾ, സ്കൂളുകൾ, ആശുപത്രികൾ എന്നിവയ്ക്കുള്ള നിർമ്മാണ ശേഷി.',i2:'കസ്റ്റം ഡിസൈനുകൾ',i2p:'നിങ്ങളുടെ സീറ്റിംഗ് എണ്ണത്തിനും സ്ഥലത്തിനും അനുസരിച്ച്.',i3:'കൃത്യസമയത്ത് ഡെലിവറിയും ഫിറ്റിംഗും',i3p:'കേരളം, കർണാടക, തമിഴ്നാട് എന്നിവിടങ്ങളിൽ.',req_quote:'ക്വട്ടേഷൻ ആവശ്യപ്പെടുക',c_mosque:'പള്ളി',c_church:'ചർച്ച്',c_hosp:'ആശുപത്രി',c_school:'സ്കൂൾ, കോളേജ്',c_aud:'ഓഡിറ്റോറിയം',
 join_h:'പുതിയ ഡിസൈനുകൾ വാട്സ്ആപ്പിൽ നേടൂ',join_p:'പേരും സ്ഥലവും പറയൂ. പുതിയ ഡിസൈനുകളും ഓഫറുകളും അയയ്ക്കാം.',your_name:'നിങ്ങളുടെ പേര്',your_town:'നിങ്ങളുടെ സ്ഥലം',send:'അയയ്ക്കുക',
@@ -668,6 +702,13 @@ function home(){
  $('#rl').innerHTML=ROOMS.map((r,i)=>`<button data-room="${i}">${ic(r.ic)}<span>${r.n[ML()?1:0]}</span></button>`).join('');
  $('#best').innerHTML=P.filter(p=>p.best).map(card).join('');
  $('#look').innerHTML=LOOK.map(l=>`<button data-tile="${l[2]}"><img src="${U(IM[l[1]],700,560)}" alt="${l[0][0]} made by Majlis Sofa, Malappuram" width="700" height="560" loading="lazy" ${fbk(l[2],700,560)}><span>${l[0][ML()?1:0]}</span></button>`).join('');
+
+const REVIEWS=[
+  {n:'Shameer P.',loc:'Manjeri, Malappuram',item:'Corner Sofa (L-shape)',t:['Ordered a custom L-shape grey suede corner sofa for our new house in Manjeri. Duroflex foam comfort and finishing are showroom quality at a much lower workshop price.','മഞ്ചേരിയിലെ പുതിയ വീട്ടിലേക്ക് ഗ്രേ സ്വീഡ് L-ഷേപ്പ് കോർണർ സോഫ ഓർഡർ ചെയ്തു. ഡ്യൂറോഫ്ലെക്സ് ഫോം കംഫർട്ടും ഫിനിഷിംഗും മികച്ചതാണ്.']},
+  {n:'Abdul Latheef K.',loc:'Kozhikode',item:'Hydraulic Bed Cot & 3 Seater',t:['Bought a King size hydraulic bed cot and 3 seater sofa. Delivered and fitted right on time in Kozhikode. Very heavy, sturdy treated-wood frame.','കിംഗ് സൈസ് ഹൈഡ്രോളിക് ബെഡ് കോട്ടും 3 സീറ്റർ സോഫയും വാങ്ങി. കൃത്യസമയത്ത് കോഴിക്കോട് എത്തിച്ച് ഫിറ്റ് ചെയ്തു തന്നു. നല്ല ഉറപ്പുള്ള ഫ്രെയിം.']},
+  {n:'Fathima R.',loc:'Areekode, Malappuram',item:'Sofa Repair & Re-upholstery',t:['Gave our 8-year-old sofa for foam and fabric change at their Areekode workshop. Looks completely brand new now and saved us buying a new set.','ഞങ്ങളുടെ 8 വർഷം പഴക്കമുള്ള സോഫ അരീക്കോട് വർക്ക്ഷോപ്പിൽ കൊടുത്ത് ഫോമും തുണിയും മാറ്റി. ഇപ്പോൾ പുതിയ സോഫ പോലെ ആയിട്ടുണ്ട്.']}
+ ];
+ $('#tgrid').innerHTML=REVIEWS.map(r=>`<article class="tcard"><div class="tstars" aria-label="5 out of 5 stars">★★★★★</div><p>“${r.t[ML()?1:0]}”</p><div class="tmeta"><div><b>${r.n}</b><span>${r.loc}</span></div><span class="tbadge">${r.item}</span></div></article>`).join('');
  slide(cur);setRoom(room);plist();
 }
 function slide(n){
@@ -822,10 +863,13 @@ function paintLang(){$$('.lg b').forEach(b=>b.classList.toggle('on',b.dataset.l=
 function renderAll(){nav();home();shop();render();hours();paintLang();if(mod)renderModal()}
 function setLang(l){lang=l;try{localStorage.setItem('majlis-lang',l)}catch(e){}applyStatic();renderAll()}
 
-/* ============ WARRANTY COUNT-UP ============ */
-function countUp(){const el=$('#wnum');if(!el||matchMedia('(prefers-reduced-motion:reduce)').matches||!('IntersectionObserver' in window))return;
- const io=new IntersectionObserver(en=>{if(en[0].isIntersecting){io.disconnect();let n=0;const iv=setInterval(()=>{el.textContent=++n;if(n>=10)clearInterval(iv)},70)}},{threshold:.4});el.textContent='0';io.observe(el)}
-
+/* ============ WARRANTY & CUSTOMER COUNT-UP ============ */
+function countUp(){
+ if(matchMedia('(prefers-reduced-motion:reduce)').matches||!('IntersectionObserver' in window))return;
+ const anim=(el,end,suffix='',ms=70,steps=10)=>{if(!el)return;const io=new IntersectionObserver(en=>{if(en[0].isIntersecting){io.disconnect();let s=0;const iv=setInterval(()=>{s++;const v=Math.round(end*(s/steps));el.textContent=v.toLocaleString('en-IN')+suffix;if(s>=steps)clearInterval(iv)},ms)}},{threshold:.3});el.textContent='0'+suffix;io.observe(el)};
+ anim($('#wnum'),10,'',70,10);
+ anim($('#custCount'),1521,'+',45,25);
+}
 /* ============ STRUCTURED DATA ============ */
 const ld=document.createElement('script');ld.type='application/ld+json';
 ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Majlis Sofa products","itemListElement":P.map((p,i)=>({"@type":"ListItem","position":i+1,"item":{"@type":"Product","name":p.n,"description":p.d[0],"category":p.c,"image":U(IM[p.k],800,640),"brand":{"@type":"Brand","name":"Majlis Sofa"},"offers":{"@type":"AggregateOffer","priceCurrency":"INR","lowPrice":p.p,"highPrice":p.x,"availability":"https://schema.org/InStock"}}}))});
